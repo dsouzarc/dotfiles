@@ -7,3 +7,9 @@ alias myip="myIP"
 
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
+
+#Make a directory and navigate into it
+mcd() { 
+    mkdir -p $1
+    cd $1
+}
