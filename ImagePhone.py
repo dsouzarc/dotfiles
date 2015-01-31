@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import config;
 import sendgrid;
 import sys;
@@ -11,11 +11,17 @@ message.set_from("Ryan D'souza <Ryans Macbook Pro Command Line>");
 
 bodyText = raw_input("Enter text content: ");
 
+imagePath = raw_input("Enter image path: ");
+
 #Blank subject
 message.set_subject(" ");
 
 #Text is what the user inputted
 message.set_text(bodyText);
+
+#Image is what user inputted
+#message.add_attachment(imagePath, imagePath);
+message.add_attachment(imagePath, open("./" + imagePath, "rb"));
 
 #Send the message
 status, msg = sg.send(message);
