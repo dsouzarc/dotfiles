@@ -29,6 +29,9 @@ else:
     print "Successfully sent"
 
 
+#Check if number is Verizon
+#http://www.verizonwireless.com/b2c/LNPControllerServlet?path=lnppromo1
+
 #Old message text that involved command line arguments
 '''
 #If there is only one parameter, the subject is blank
