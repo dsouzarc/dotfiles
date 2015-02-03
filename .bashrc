@@ -3,6 +3,9 @@ export PATH=/path/to/dir:$PATH
 #Runs a python script to send a text to my phone
 alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/TextPhone.py"
 
+#Runs a python script that sends a link to my phone
+alias TextLink="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/TextLink.py"
+
 #Runs a python script to send a 
 
 #Prints current external IP Address
