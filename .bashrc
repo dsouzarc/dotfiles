@@ -1,3 +1,5 @@
+export PATH=/path/to/dir:$PATH
+
 #Runs a python script to send a text to my phone
 alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/TextPhone.py"
 
@@ -13,3 +15,21 @@ mcd() {
     mkdir -p $1
     cd $1
 }
+
+#Convert all .jpg files to .png
+pngtojpg() { 
+    for i in *.png ; do 
+        convert "$i" "${i%.*}.jpg"
+    done
+}
+
+#alias jpgToPng="for i in *.jpg ; do convert "$i" "${i%.*}.png" ; done";
+
+#Convert all .png files to .jpg
+alias pngToJpg="for i in *.png ; do convert "$i" "${i%.*}.jpg" ; done";
+
+#Whether to use .bashrc or other files
+if [ -f $HOME/.bash_aliases ]
+then
+  . $HOME/.bash_aliases
+fi
