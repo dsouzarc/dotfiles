@@ -32,6 +32,9 @@ jpgtopng() {
     done
 }
 
+#Causes the changes to .bashrc to come true
+alias bashme="cp .bashrc .bash_profile; source .bashrc"
+
 #Whether to use .bashrc or other files
 if [ -f $HOME/.bash_aliases ]
 then
