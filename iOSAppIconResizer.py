@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from PIL import Image;
 import os;
 import sys;
@@ -30,5 +32,3 @@ resizeImage(120, 120, "iPhone5-6@2x");
 resizeImage(120, 120, "iPhone4S@2x");
 resizeImage(152, 152, "iPad(mini)@2x");
 resizeImage(76, 76, "iPad2(mini)@1x");
-
-

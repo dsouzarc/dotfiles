@@ -1,5 +1,8 @@
 export PATH=/path/to/dir:$PATH
 
+#Runs a python script that converts an image to all the necessary sizes for an iOS app
+alias iOSImageConverter="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/iOSAppIconResizer.py"
+
 #Runs a python script to send a text to my phone
 alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/TextPhone.py"
 
