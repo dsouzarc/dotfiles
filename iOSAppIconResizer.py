@@ -1,5 +1,11 @@
-from PIL import Image
-import sys
+from PIL import Image;
+import sys;
+
+global originalImage;
+
+def resizeImage(newWidth, newHeight, imageDescription):
+    newImage = originalImage.resize((newWidth, newHeight), Image.ANTIALIAS);
+    newImage.save("Icon-" + imageDescription + ".png", quality=100);
 
 if len(sys.argv) == 1:
     fileName = raw_input("Enter file name and directory:\n");
@@ -7,13 +13,6 @@ if len(sys.argv) == 1:
 else:
     fileName = sys.argv[1];
 
-print(fileName);
+originalImage = Image.open(fileName);
 
-foo = Image.open("anonymous.jpg");
-
-print(foo.size);
-
-foo = foo.resize((250, 250), Image.ANTIALIAS);
-
-foo.save("anonymous resize.jpg", quality=97);
-
+resizeImage(180, 180, "Small");
