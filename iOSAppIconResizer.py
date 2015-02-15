@@ -3,6 +3,7 @@
 from PIL import Image;
 import os;
 import sys;
+import shutil;
 
 #Original image
 global originalImage;
@@ -33,9 +34,12 @@ originalImage = Image.open(fileName);
 pathWhenExecuting = os.getcwd();
 saveToPath = pathWhenExecuting + "/AppIcon";
 
-#If the 'AppIcon' directory does not exist, make it
-if not os.path.exists(saveToPath):
-    os.makedirs(saveToPath);
+#If the 'AppIcon' directory exists, delete it
+if os.path.exists(saveToPath):
+    shutil.rmtree(saveToPath);
+
+#And remake it
+os.makedirs(saveToPath);
 
 #Creates a copy of the original image, resizes to those dimensions, saves it to disk
 resizeImage(180, 180, "iPhone6@3x");
