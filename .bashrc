@@ -1,10 +1,13 @@
 export PATH=/path/to/dir:$PATH
 
+dropboxprogramming="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books"
+
 #Runs a python script that converts an image to all the necessary sizes for an iOS app
 alias iOSImageConverter="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/iOSAppIconResizer.py"
 
 #Runs a python script to send a text to my phone
-alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextPhone.py"
+#alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextPhone.py"
+alias TextPhone="python $dropboxprogramming/dotfiles/Python/Textphone.py"
 
 #Runs a python script that sends a link to my phone
 alias TextLink="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextLink.py"
@@ -17,7 +20,11 @@ alias myIP="curl http://api.ipify.org; echo"
 alias myip="myIP"
 
 #Go places
-alias todotfiles="cd /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles"
+alias toprogramming="cd /Users/Ryan/Dropbox/All\ Good\ Programming\ Books"
+alias toalgos="toprogramming; cd Algorithms\ and\ Data\ Structures"
+alias todotfiles="toprogramming; cd dotfiles"
+alias toios="cd /Users/Ryan/iOS\ Development"
+alias topython="toprogramming; cd Python"
 
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
