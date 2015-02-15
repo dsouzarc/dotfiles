@@ -34,14 +34,13 @@ alias todownloads="cd; cd Downloads"
 alias ls="ls -CF"
 
 #Shortens git commiting everything
-gitcommit() {
-    #git add --all
-    
+commitall() {
+    git add --all
+
+    #Gets all the input into one string
     message="$*"
 
-    echo "$message"
-
-    #git commit -m $message
+    git commit -m "$message"
 }
 
 #Prints the contents of that directory. No formatting
