@@ -16,6 +16,9 @@ alias ShortenLink="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Ba
 alias myIP="curl http://api.ipify.org; echo"
 alias myip="myIP"
 
+#Go places
+alias todotfiles="cd /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles"
+
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
 
