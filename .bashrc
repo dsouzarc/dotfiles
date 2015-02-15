@@ -1,26 +1,29 @@
 export PATH=/path/to/dir:$PATH
 
-dropboxprogramming="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books"
+#Short form for where most of my code is stored
+dboxprogram="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books"
+
+#DOTFILES SHORTCUTS
+dotfiles="$dboxprogram/dotfiles"
 
 #Runs a python script that converts an image to all the necessary sizes for an iOS app
-alias iOSImageConverter="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/iOSAppIconResizer.py"
+alias iOSImageConverter="python $dotfiles/Python/iOSAppIconResizer.py"
 
 #Runs a python script to send a text to my phone
-#alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextPhone.py"
-alias TextPhone="python $dropboxprogramming/dotfiles/Python/Textphone.py"
+alias TextPhone="python $dotfiles/Python/Textphone.py"
 
 #Runs a python script that sends a link to my phone
-alias TextLink="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextLink.py"
+alias TextLink="python $dotfiles/Python/TextLink.py"
 
 #Runs a bash script to shorten a link, print the shortened URL, and copy it to clipboard
-alias ShortenLink="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Bash/./ShortenURL.sh"
+alias ShortenLink="$dotfiles/Bash/./ShortenURL.sh"
 
 #Prints current external IP Address
 alias myIP="curl http://api.ipify.org; echo"
 alias myip="myIP"
 
 #Go places
-alias toprogramming="cd /Users/Ryan/Dropbox/All\ Good\ Programming\ Books"
+alias toprogramming="cd $dboxprogram"
 alias toalgos="toprogramming; cd Algorithms\ and\ Data\ Structures"
 alias todotfiles="toprogramming; cd dotfiles"
 alias toios="cd /Users/Ryan/iOS\ Development"
