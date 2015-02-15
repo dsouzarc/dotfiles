@@ -29,8 +29,51 @@ alias todotfiles="toprogramming; cd dotfiles"
 alias toios="cd /Users/Ryan/iOS\ Development"
 alias topython="toprogramming; cd Python"
 alias todownloads="cd; cd Downloads"
+
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
+
+#Prints the contents of that directory. No formatting
+peekn() {
+
+    #If there is no input directory, print the current one
+    if [ -z "$1"] 
+    then
+        ls
+
+    #But if there is an input
+    else
+        #Get into it
+        cd $1
+
+        #Print in nice columns format
+        ls
+
+        #Go back
+        cd ..
+    fi
+}
+
+#Prints the contents of that directory in a nice format
+peek() {
+
+    #If there is no input directory, print the current one
+    if [ -z "$1"] 
+    then
+        ls | column -c 200
+
+    #But if there is an input
+    else
+        #Get into it
+        cd $1
+
+        #Print in nice columns format
+        ls | column -c 200
+
+        #Go back
+        cd ..
+    fi
+}
 
 #Make a directory and navigate into it
 mcd() { 
