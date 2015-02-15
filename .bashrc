@@ -33,6 +33,17 @@ alias todownloads="cd; cd Downloads"
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
 
+#Shortens git commiting everything
+gitcommit() {
+    #git add --all
+    
+    message="$*"
+
+    echo "$message"
+
+    #git commit -m $message
+}
+
 #Prints the contents of that directory. No formatting
 peekn() {
 
