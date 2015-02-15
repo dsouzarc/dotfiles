@@ -6,9 +6,20 @@ JSONResult=$(python2 -c "import urllib; print urllib.urlopen(\"http://po.st/api/
 #Parses result to see if it was successful
 Success=$(node -pe 'JSON.parse(process.argv[1]).status_txt' "$JSONResult")
 
-if [ "$Success" == "OK" ] then
-    echo YES
-fi
+#If it successfully shortened the link
+if [ "$Success" == "OK" ]; then
 
-echo $Success
+    #The shortened link
+    ShortenedURL=$(node -pe 'JSON.parse(process.argv[1]).short_url' "$JSONResult")
+
+    #Print it
+    echo $ShortenedURL
+
+    #Copy to clipboard
+    echo $ShortenedURL | pbcopy
+
+#If there was an error, print it
+else
+    echo $JSONResult
+fi
 
