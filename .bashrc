@@ -28,7 +28,7 @@ alias toalgos="toprogramming; cd Algorithms\ and\ Data\ Structures"
 alias todotfiles="toprogramming; cd dotfiles"
 alias toios="cd /Users/Ryan/iOS\ Development"
 alias topython="toprogramming; cd Python"
-
+alias todownloads="cd; cd Downloads"
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
 
