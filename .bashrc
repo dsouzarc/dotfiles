@@ -1,15 +1,13 @@
 export PATH=/path/to/dir:$PATH
 
 #Runs a python script that converts an image to all the necessary sizes for an iOS app
-alias iOSImageConverter="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/iOSAppIconResizer.py"
+alias iOSImageConverter="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/iOSAppIconResizer.py"
 
 #Runs a python script to send a text to my phone
-alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/TextPhone.py"
+alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextPhone.py"
 
 #Runs a python script that sends a link to my phone
-alias TextLink="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/TextLink.py"
-
-#Runs a python script to send a 
+alias TextLink="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextLink.py"
 
 #Prints current external IP Address
 alias myIP="curl http://api.ipify.org; echo"
