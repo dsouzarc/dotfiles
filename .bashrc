@@ -9,6 +9,9 @@ alias TextPhone="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfil
 #Runs a python script that sends a link to my phone
 alias TextLink="python /Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Python/TextLink.py"
 
+#Runs a bash script to shorten a link, print the shortened URL, and copy it to clipboard
+alias ShortenLink="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books/dotfiles/Bash/./ShortenURL.sh"
+
 #Prints current external IP Address
 alias myIP="curl http://api.ipify.org; echo"
 alias myip="myIP"
