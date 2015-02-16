@@ -15,6 +15,13 @@ alias TextPhone="python $dotfiles/Python/Textphone.py"
 #Runs a python script that sends a link to my phone
 alias TextLink="python $dotfiles/Python/TextLink.py"
 
+#Runs a python script to text people
+alias TextPeople="python $dotfiles/Python/TextPeople.py"
+
+#Runs a python script to email stuff to myself
+alias EmailLink="python $dotfiles/Python/EmailLink.py"
+alias EmailMe="python $dotfiles/Python/EmailMe.py"
+
 #Runs a bash script to shorten a link, print the shortened URL, and copy it to clipboard
 alias ShortenLink="$dotfiles/Bash/./ShortenURL.sh"
 
