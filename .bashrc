@@ -36,6 +36,12 @@ alias todotfiles="toprogramming; cd dotfiles"
 alias toios="cd /Users/Ryan/iOS\ Development"
 alias topython="toprogramming; cd Python"
 alias todownloads="cd; cd Downloads"
+alias tobmf="toprogramming; cd Bring\ Me\ Food"
+
+#Downloads any website's content
+downloadsite() {
+    wget  --random-wait  -r  -p  -e  robots=off  -U  mozilla $1
+}
 
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"

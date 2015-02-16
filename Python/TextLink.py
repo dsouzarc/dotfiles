@@ -2,16 +2,27 @@
 import config;
 import sendgrid;
 import sys;
+import urllib;
+import json
+from pprint import pprint
 
 sg = sendgrid.SendGridClient(config.SG_USERNAME, config.SG_PASSWORD);
 message = sendgrid.Mail();
 
 message.add_to("Ryan D'souza <" + config.PHONE + "@vtext.com>");
-message.set_from("Ryan D'souza <Ryans Macbook Pro Command Line>");
+message.set_from("MBPro CL");
 
 #If a link has been included as a parameter
 if len(sys.argv) == 2:
-    bodyText = sys.argv[1];
+
+    #If the link URL is less than 150 chars
+    if len(sys.argv[1]) <= 150:
+        bodyText = sys.argv[1];
+
+    #Else, compress it
+    else:
+        JSON = json.loads(urllib.urlopen("http://po.st/api/shorten?longUrl=" + sys.argv[1] + "&apiKey=3E5C05F5-DDED-4485-A193-F486E947F547",'r').read());
+        bodyText = JSON['short_url'];
 
 #Otherwise, just prompt for link
 else:
