@@ -1,7 +1,7 @@
 export PATH=/path/to/dir:$PATH
 
 #Short form for where most of my code is stored
-dboxprogram="/Users/Ryan/Dropbox/All\ Good\ Programming\ Books"
+dboxprogram="~/Dropbox/All\ Good\ Programming\ Books"
 
 #DOTFILES SHORTCUTS
 dotfiles="$dboxprogram/dotfiles"
@@ -33,7 +33,7 @@ alias myip="myIP"
 alias toprogramming="cd $dboxprogram"
 alias toalgos="toprogramming; cd Algorithms\ and\ Data\ Structures"
 alias todotfiles="toprogramming; cd dotfiles"
-alias toios="cd /Users/Ryan/iOS\ Development"
+alias toios="cd ~/iOS\ Development"
 alias topython="toprogramming; cd Python"
 alias todownloads="cd; cd Downloads"
 alias tobmf="toprogramming; cd Bring\ Me\ Food"
