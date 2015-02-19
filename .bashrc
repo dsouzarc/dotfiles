@@ -6,6 +6,9 @@ dboxprogram="~/Dropbox/All\ Good\ Programming\ Books"
 #DOTFILES SHORTCUTS
 dotfiles="$dboxprogram/dotfiles"
 
+#Counts number of files in directories and subdirectories
+alias countall="find */ -type f | wc -l"
+
 #Runs a python script that converts an image to all the necessary sizes for an iOS app
 alias iOSImageConverter="python $dotfiles/Python/iOSAppIconResizer.py"
 
