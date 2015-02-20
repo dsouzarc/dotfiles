@@ -40,9 +40,17 @@ public class ResetImageTimes {
 
                     else {
                         numFileNamesChanged++;
-                        if(imagesInFolder[i].renameTo(new File(directoryName + "/" + directoryName + "-" + i + fileExtension))) {
+
+                        final File newestFile = new File(directoryName + "/" + directoryName + "-" + i + fileExtension);
+                        if(imagesInFolder[i].renameTo(newestFile)) {
                             System.out.println("Successfully changed name to: " + newFileName);
-                            imagesInFolder[i].setLastModified(pictureTakenDate.getTime());
+
+                            if(newestFile.setLastModified(pictureTakenDate.getTime())) {
+                                System.out.println("SUCCESSFUL DATE MODIFICATION");
+                            }
+                            else {
+                                System.out.println("UNSUCCESSFUL DATE MODIFICATION");
+                            }
                         }
                         else {
                             System.out.println("PROBLEM CHANGING FILE NAME: " + imagesInFolder[i].getName());
