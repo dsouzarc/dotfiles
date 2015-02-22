@@ -40,6 +40,7 @@ alias toios="cd ~/iOS\ Development"
 alias topython="toprogramming; cd Python"
 alias todownloads="cd; cd Downloads"
 alias tobmf="toprogramming; cd Bring\ Me\ Food"
+alias tooj="toprogramming; cd Odd\ Jobs"
 
 #Downloads any website's content
 downloadsite() {
