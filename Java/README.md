@@ -45,5 +45,8 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
     - One slight problem was that multiple back-ups on the same day caused multiple folders (ie. 'DATE', 'DATE #2', 'DATE #3')
 + The edited/enhanced photos Google+ added were uniform ie. ORIGINAL_FILE_NAME-EDITED.jpg
 
+###What I did
 
++ Decided to solve this problem programmatically
++ 
 
