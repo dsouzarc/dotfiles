@@ -48,5 +48,9 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
 ###What I did
 
 + Decided to solve this problem programmatically
-+ 
 
+1. Delete duplicated photos
+    + 'GoogleDuplicatePhotoRemover.java' recursively looks through all the photos in folders of a directory and deletes the original photo if it finds an enhanced version of that photo
+2. Merge the directories with photos taken on the same day
+    + 'MergeDirectories.java' looks at all the directory names inside a folder and if it finds names like 'DATE' 'DATE #2' 'DATE #3', moves all the photos from 'DATE #2' and 'DATE #3' to 'DATE'
+3. 
