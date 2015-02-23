@@ -53,4 +53,11 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
     + 'GoogleDuplicatePhotoRemover.java' recursively looks through all the photos in folders of a directory and deletes the original photo if it finds an enhanced version of that photo
 2. Merge the directories with photos taken on the same day
     + 'MergeDirectories.java' looks at all the directory names inside a folder and if it finds names like 'DATE' 'DATE #2' 'DATE #3', moves all the photos from 'DATE #2' and 'DATE #3' to 'DATE'
-3. 
+3. Reset the file created time and date to the day it was created
+    + 'ResetImageTimes.java' resets the date created timestamp of each photo in a directory to a date version of that directory's name and changes the image's name to a uniform version
+    + For example, if a folder is named: 2015-02-22
+        - Images in that folder would be named 2015-02-22_01.jpg 2015-02-22_02.jpg 2015-02-22_03.jpg
+        - The date created/last modified timestamp of that photo would be: "Sunday, February 22nd 2015"
+
+
+#My solution worked and I was able to successfully transfer all the photos backed up to Googel+ to my iPhone 6 :) 
