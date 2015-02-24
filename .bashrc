@@ -1,5 +1,17 @@
 export PATH=/path/to/dir:$PATH
 
+#Copy current directory to clipboard
+alias cpwd='pwd | xclip -selection clipboard'
+
+#Quickly find file
+alias ff='find . -type f -name'
+
+#Quickly find directory
+alias fd='find . -type d -name'
+
+#get internet speed
+alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip'
+
 #Short form for where most of my code is stored
 dboxprogram="~/Dropbox/All\ Good\ Programming\ Books"
 
