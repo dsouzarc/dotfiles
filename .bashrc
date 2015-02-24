@@ -120,6 +120,16 @@ mcd() {
     cd $1
 }
 
+#Copy file to clipboard
+copyfile() {
+    cat $1 | xclip -selection clipboard
+}
+
+#Last 10 modified files
+last() {
+    ls -lt -a $1 | head
+}
+
 #Convert all .jpg files to .png
 pngtojpg() { 
     for i in *.jpg ; do 
