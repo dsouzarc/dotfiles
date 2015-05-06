@@ -50,6 +50,19 @@ def save_credentials(usernameKey, username, password, passwordKey):
             print("Credentials saved");
             return;
 
+def get_key(key):
+
+    if key in credentials:
+        return base64.b64decode(credentials[key]);
+    else:
+        raise KeyError("No value found for: " + key);
+
+def does_key_exist(key):
+    return key in credentials;
+
+print get_key("RobinhoodPassword");
+
+
 usernameKey = raw_input("Username key: ");
 username = raw_input("Username: ");
 
