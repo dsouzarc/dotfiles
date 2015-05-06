@@ -24,7 +24,6 @@ if os.path.isfile(file_path):
     try:
         with open(file_path) as credential_file:
             credentials = json.load(credential_file);
-            print("Credentials loaded");
     except ValueError:
         print("Value error for loading existing credentials from file. Building new file");
         credentials = {};
