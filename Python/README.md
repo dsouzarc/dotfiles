@@ -14,9 +14,10 @@ and using it as simple as
 
 I mainly built this to use on my school's computer where installing commandline tools like 'pip' is not allowed. Because of that, I can't install python's 'keyring' library to securely store my usernames/passwords. So, I made this script which can be run from anywhere
 
-####How to use
-#####Installation & Setup
-Sets up directory and json file, and also prompts for quickly saving a username and password (password entering is hidden)
+#####How to use
+Installation & Setup
+
+    #Sets up directory and json file, and also prompts for quickly saving a username and password (password entering is hidden)
     python CredentialManager.py
 
 Accessing stored data
@@ -27,6 +28,7 @@ Accessing stored data
     password = CredentialManager.get_value("sendgridPassword");
 
 Quickly modifying data (Option 1) --> [Example](https://github.com/dsouzarc/dotfiles/blob/master/Python/CredentialManagerExample.py)
+
     import CredentialManager;
 
     CredentialManager.save_credentials("sendgridUsername", "someusername", sendgridPassword", "somePassword");
@@ -35,6 +37,7 @@ Quickly modifying data (Option 1) --> [Example](https://github.com/dsouzarc/dotf
     CredentialManager.delete_key("PromMeParseAPIKey");
 
 Quickly modifying data (Option 2) --> Run from the terminal
+
     python -c 'import CredentialManager; CredentialManager.save_key("myKey", "myValue")'
     python -c 'import CredentialManager; CredentialManager.delete_key("gmailUsername")'
 
