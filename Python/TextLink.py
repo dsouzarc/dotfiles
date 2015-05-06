@@ -1,15 +1,18 @@
 #!/usr/bin/python
-import config;
+
 import sendgrid;
 import sys;
 import urllib;
 import json
+import CredentialManager;
+
 from pprint import pprint
 
-sg = sendgrid.SendGridClient(config.SG_USERNAME, config.SG_PASSWORD);
+sg = sendgrid.SendGridClient(CredentialManager.get_value("SendGridUsername"), CredentialManager.get_value("SendGridPassword"));
 message = sendgrid.Mail();
 
-message.add_to("Ryan D'souza <" + config.PHONE + "@vtext.com>");
+message.add_to("Ryan D'souza <" + CredentialManager.get_value("PHONE") + "@vtext.com>");
+
 message.set_from("MBPro CL");
 
 #If a link has been included as a parameter

@@ -1,12 +1,12 @@
 #!/usr/bin/python
-import config;
+import CredentialManager;
 import sendgrid;
 import sys;
 
-sg = sendgrid.SendGridClient(config.SG_USERNAME, config.SG_PASSWORD);
+sg = sendgrid.SendGridClient(CredentialManager.get_value("SendGridUsername"), CredentialManager.get_value("SendGridPassword"));
 message = sendgrid.Mail();
 
-message.add_to("Ryan D'souza <" + config.PHONE + "@vtext.com>");
+message.add_to("Ryan D'souza <" + CredentialManager.get_value("PHONE") + "@vtext.com>");
 message.set_from("Ryan D'souza <Ryans Macbook Pro Command Line>");
 
 bodyText = raw_input("Enter text content: ");

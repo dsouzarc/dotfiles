@@ -1,9 +1,9 @@
 #!/usr/bin/python
-import config;
+import CredentialManager;
 import sendgrid;
 import sys;
 
-sg = sendgrid.SendGridClient(config.SG_USERNAME, config.SG_PASSWORD);
+sg = sendgrid.SendGridClient(CredentialManager.get_value("SendGridUsername"), CredentialManager.get_value("SendGridPassword"));
 message = sendgrid.Mail();
 
 message.add_to("dsouzarc@gmail.com");
