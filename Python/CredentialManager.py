@@ -3,6 +3,14 @@ import json;
 import getpass; 
 import os;
 
+
+####################################################
+# Written by Ryan D'souza
+# A password manager completely written in Python
+####################################################
+
+
+#Store data in hidden file in hidden folder in home directory
 directory_path = str(os.path.expanduser("~")) + "/.my_credential_manager/";
 file_path = directory_path + ".credential_files.json";
 
@@ -14,7 +22,6 @@ if os.path.isfile(file_path):
     try:
         with open(file_path) as credential_file:
             credentials = json.load(credential_file);
-            print(credentials);
             print("Credentials loaded");
     except ValueError:
         print("Value error for loading existing credentials from file. Building new file");
@@ -27,7 +34,6 @@ def save_credentials(usernameKey, username, password, passwordKey):
     
     if usernameKey in credentials:
         print("Username already exists for '" + usernameKey + "'.");
-
         answer = raw_input("Override? y/n: ");
 
         if answer == 'y':
@@ -60,14 +66,25 @@ def get_key(key):
 def does_key_exist(key):
     return key in credentials;
 
-print get_key("RobinhoodPassword");
+def delete_key(key):
+    if key in credentials:
+        del credentials[key];
+        
+        with open(file_path, 'w') as file:
+            json.dump(credentials, file, sort_keys = True, indent = 4, ensure_ascii = False);
+            print("Value for '" + key + "' has been deleted. Credentials saved");
+            return;
+        print("Error saving credentials");
+    else:
+        print("Delete failed; '" + key + "' does not exist");
 
+def save_credentials():
+    print("Here 2");
+    usernameKey = raw_input("Username key: ")   
+    username = raw_input("Username: ");
+    passwordKey = raw_input("Password key: ");
+    password = getpass.getpass("Password: ");
 
-usernameKey = raw_input("Username key: ");
-username = raw_input("Username: ");
-
-passwordKey = raw_input("Password key: ");
-password = getpass.getpass("Password: ");
-
-save_credentials(usernameKey, username, password, passwordKey);
-
+    save_credentials(usernameKey, username, password, passwordKey);
+print("Here 1");
+save_credentials();
