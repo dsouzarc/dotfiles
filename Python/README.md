@@ -12,6 +12,8 @@ There's only one file needed (quick for copying/pasting), and all imports are fr
 and using it as simple as
     python CredentialManager.py
 
+I mainly built this to use on my school's computer where installing commandline tools like 'pip' is not allowed. Because of that, I can't install python's 'keyring' library to securely store my usernames/passwords. So, I made this script which can be run from anywhere
+
 #####How to use
 Installation & Setup
     #Sets up directory and json file, and also prompts for quickly saving a username and password (password entering is hidden)
