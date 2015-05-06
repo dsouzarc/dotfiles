@@ -78,13 +78,13 @@ def delete_key(key):
     else:
         print("Delete failed; '" + key + "' does not exist");
 
-def save_credentials():
-    print("Here 2");
+def save_credentials_no_param():
     usernameKey = raw_input("Username key: ")   
     username = raw_input("Username: ");
     passwordKey = raw_input("Password key: ");
     password = getpass.getpass("Password: ");
 
     save_credentials(usernameKey, username, password, passwordKey);
-print("Here 1");
-save_credentials();
+
+if __name__ == "__main__":
+    save_credentials_no_param();
