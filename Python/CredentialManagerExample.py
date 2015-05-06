@@ -11,7 +11,7 @@ CredentialManager.save_credentials("gmailUsernameKey", "secretUsername", "gmailP
 
 CredentialManager.save_key("gmailUsername", "gmailPassword");
 
-password = CredentialManager.get_key("gmailUsername");
+password = CredentialManager.get_value("gmailUsername");
 
 if CredentialManager.does_key_exist("gmailUsername"):
     CredentialManager.delete_key("gmailUsername");

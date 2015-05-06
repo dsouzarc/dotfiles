@@ -81,7 +81,7 @@ def save_key_prompt():
     save_key(key, value);
 
 #Get value/credential associated with key
-def get_key(key):
+def get_value(key):
 
     if key in credentials:
         return base64.b64decode(credentials[key]);
