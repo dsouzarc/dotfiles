@@ -41,8 +41,12 @@ alias EmailMe="python $dotfiles/Python/EmailMe.py"
 alias ShortenLink="$dotfiles/Bash/./ShortenURL.sh"
 
 #Prints current external IP Address
-alias myIP="curl http://api.ipify.org; echo"
+alias myIP="curl http://api.ipify.org; echo" #Other option: 'curl ifconfig.me'
 alias myip="myIP"
+
+#Prints local IP Address
+alias myIPl="ipconfig getifaddr en1"
+alias myipl="myIPl"
 
 #Go places
 alias toprogramming="cd $dboxprogram"
