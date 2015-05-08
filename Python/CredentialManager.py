@@ -87,6 +87,9 @@ def get_value(key):
     else:
         raise KeyError("No value found for: " + key);
 
+def get(key):
+    return get_value(key);
+
 #Check to see if a value/credential exists
 def does_key_exist(key):
     return key in credentials;
