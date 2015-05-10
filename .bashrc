@@ -45,7 +45,7 @@ alias myIP="curl http://api.ipify.org; echo" #Other option: 'curl ifconfig.me'
 alias myip="myIP"
 
 #Prints local IP Address
-alias myIPl="ipconfig getifaddr en1"
+alias myIPL="ipconfig getifaddr en1"
 alias myipl="myIPl"
 
 #Go places
@@ -56,7 +56,7 @@ alias toios="cd ~/iOS\ Development"
 alias topython="toprogramming; cd Python"
 alias todownloads="cd; cd Downloads"
 alias tobmf="toprogramming; cd Bring\ Me\ Food"
-alias tooj="toprogramming; cd Odd\ Jobs"
+alias tocharles="toprogramming; cd Charles\ Proxying"
 
 #Downloads any website's content
 downloadsite() {
@@ -148,11 +148,11 @@ jpgtopng() {
     done
 }
 
-#Causes the changes to .bashrc to come true
-alias bashme="cp ~/.bashrc ~/.bash_profile; source ~/.bashrc"
-
 #Whether to use .bashrc or other files
 if [ -f $HOME/.bash_aliases ]
 then
   . $HOME/.bash_aliases
 fi
+
+#Causes the changes to .bashrc to come true
+alias bashme="cp ~/.bashrc ~/.bash_profile; source ~/.bashrc"
