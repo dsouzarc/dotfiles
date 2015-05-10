@@ -1,43 +1,51 @@
 #!/usr/bin/python
 import CredentialManager;
-import sendgrid;
 import sys;
+import urllib2;
+import urllib;
 
-sg = sendgrid.SendGridClient(CredentialManager.get_value("SendGridUsername"), CredentialManager.get_value("SendGridPassword"));
-message = sendgrid.Mail();
-
-message.add_to("Ryan D'souza <" + CredentialManager.get_value("PHONE") + "@vtext.com>");
-message.set_from("Ryan D'souza <Ryans Macbook Pro Command Line>");
-
-bodyText = raw_input("Enter text content: ");
-
-#Blank subject
-message.set_subject(" ");
-
-#Text is what the user inputted
-message.set_text(bodyText);
-
-#Send the message
-status, msg = sg.send(message);
-
-#Print error
-if msg.find("success") == -1:
-    print msg;
-
-#Print message successfully sent
-else:
-    print "Successfully sent"
+######################################################
+# Written by Ryan D'souza
+# Sends a text to myself using SendGrid's API
+#
+# Dependencies: CredentialManager
+#   tiny.cc/credentialManager
+#
+# Run Instructions: 
+#   python TextPhone
+######################################################
 
 
-#Old message text that involved command line arguments
-'''
-#If there is only one parameter, the subject is blank
+#If message is commandline argument
 if len(sys.argv) == 2:
-    message.set_subject(" ");
-    message.set_text(sys.argv[1]);
+    message = sys.argv[1];
+else:
+    message = raw_input("Enter message: ");
 
-#But, if there's also a subject
-if len(sys.argv) == 3:
-    message.set_subject(sys.argv[1]);
-    message.set_subject(sys.argv[2]);
-'''
+#Url for POST request
+url = "https://api.sendgrid.com/api/mail.send.json";
+
+#My Information
+username = CredentialManager.get_value("SendGridUsername");
+password = CredentialManager.get_value("SendGridPassword");
+from_ = "6099154930";
+to = from_ + "@vtext.com";
+
+params = {
+    "api_user": username,
+    "api_key": password,
+    "from": from_,
+    "to": to,
+    "subject": " ",
+    "text": message
+};
+
+params = urllib.urlencode(params);
+
+request = urllib.urlopen(url, params);
+response = request.read();
+
+if response.find("success") == -1:
+    print(response);
+else:
+    print("Successfully sent");
