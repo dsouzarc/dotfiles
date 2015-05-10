@@ -1,6 +1,6 @@
 #Written by Ryan D'souza
 
-##Various python files I run from the commandline to help me with miscellaneous tasks
+##Various Python files I run from the commandline to help me with miscellaneous tasks
 
 ####[Credential Manager](https://github.com/dsouzarc/dotfiles/blob/master/Python/CredentialManager.py)
 
@@ -48,3 +48,48 @@ Creates a directory in the directory it is run from called 'AppIcon' and saves e
 
     #Can be run from any directory
     python iOSAppIconResizer.py imageName.jpg
+
+
+####[Text Phone](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextPhone.py)
+Quickly sends a text to myself from the commandline
+
+Dependencies:
+    [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
+
+Run Instructions:
+
+    python TextPhone.py
+
+
+####[Text Phone Plain](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextPhoneP.py)
+Quickly sends a text to myself from the commandline
+Different from 'Text Phone' in that it has no dependencies, which means the password needs to be entered while the program is run
+
+Run Instructions: 
+
+    python TextPhoneP.py
+
+####[Text Link](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextLink.py)
+Quickly sends a link to myself from the commandline
+If the link is too long (over 150 characters), shortens the link by using po.st
+
+Dependencies:
+    [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
+
+Run Instructions:
+
+    python TextLink.py linkhere
+
+Or, as a prompt:
+
+    python TextLink.py
+
+####[Text People](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextPeople.py)
+Quickly sends a text to anyone from anyone from the commandline
+
+Dependencies:
+     [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
+
+Run Instructions:
+
+    python TextPeople.py
