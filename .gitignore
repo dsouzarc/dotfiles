@@ -1,4 +1,33 @@
+#Extensions I frequently add to .gitignore
+
+#Python
 config.py
 *.pyc
+
+#Vim
 *.swp
+
+#Java
 *.class
+
+#iOS Development
+*.plist
+/AppDelegate.m
+AppDelegate.m
+misc/
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
