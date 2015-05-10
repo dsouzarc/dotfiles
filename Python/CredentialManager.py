@@ -4,10 +4,13 @@ import getpass;
 import os;
 
 
-####################################################
+######################################################################################
 # Written by Ryan D'souza
 # A password manager completely written in Python
-####################################################
+#
+# For run instructions, see
+#   https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager 
+######################################################################################
 
 
 #Store data in hidden file in hidden folder in home directory
