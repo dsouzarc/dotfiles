@@ -1,0 +1,16 @@
+Resume: tiny.cc/dsouzarcResume
+All CS Projects: tiny.cc/dsouzarcCSProjects
+Website: tiny.cc/dsouzarc
+
+.vimrc: tiny.cc/dsouzarcVIMRC
+.gitignore: tiny.cc/dsouzarcGITIGNORE
+.bashrc: tiny.cc/dsouzarcBASHRC
+
+Solarized Dark: tiny.cc/solarizedDark
+
+Credential Manager: tiny.cc/credentialManager
+
+TextPhone: tiny.cc/textPhone
+TextPhone Plain: tiny.cc/textPhoneP
+TextLink: tiny.cc/textLink
+TextPeople: tiny.cc/textPeople
