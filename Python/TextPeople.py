@@ -1,46 +1,46 @@
 #!/usr/bin/python
 import CredentialManager;
-import sendgrid;
 import sys;
+import urllib2;
+import urllib;
 
-sg = sendgrid.SendGridClient(CredentialManager.get_value("SendGridUsername"), CredentialManager.get_value("SendGridPassword"));
-message = sendgrid.Mail();
+######################################################
+# Written by Ryan D'souza
+# Sends a text to a person using SendGrid's API
+#
+# Dependencies: CredentialManager
+#   tiny.cc/credentialManager
+#
+# Run Instructions: 
+#   python TextPeople.py
+######################################################
 
-message.add_to("Ryan D'souza <" + raw_input("Enter to: ") + ">");
-message.set_from("Ryan D'souza <" + raw_input("Enter from: ") + ">");
+to = raw_input("To: ");
+from_ = raw_input("From: ");
+message = raw_input("Message: ");
 
-bodyText = raw_input("Enter text content: ");
+#Url for POST request
+url = "https://api.sendgrid.com/api/mail.send.json";
 
-#Blank subject
-message.set_subject(" ");
+#My Information
+username = CredentialManager.get_value("SendGridUsername");
+password = CredentialManager.get_value("SendGridPassword");
 
-#Text is what the user inputted
-message.set_text(bodyText);
+params = {
+    "api_user": username,
+    "api_key": password,
+    "from": from_,
+    "to": to,
+    "subject": " ",
+    "text": message
+};
 
-#Send the message
-status, msg = sg.send(message);
+params = urllib.urlencode(params);
 
-#Print error
-if msg.find("success") == -1:
-    print msg;
+request = urllib.urlopen(url, params);
+response = request.read();
 
-#Print message successfully sent
+if response.find("success") == -1:
+    print(response);
 else:
-    print "Successfully sent"
-
-
-#Check if number is Verizon
-#http://www.verizonwireless.com/b2c/LNPControllerServlet?path=lnppromo1
-
-#Old message text that involved command line arguments
-'''
-#If there is only one parameter, the subject is blank
-if len(sys.argv) == 2:
-    message.set_subject(" ");
-    message.set_text(sys.argv[1]);
-
-#But, if there's also a subject
-if len(sys.argv) == 3:
-    message.set_subject(sys.argv[1]);
-    message.set_subject(sys.argv[2]);
-'''
+    print("Successfully sent");

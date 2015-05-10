@@ -1,19 +1,35 @@
 #!/usr/bin/python
 
-import sendgrid;
 import sys;
+import urllib2;
 import urllib;
 import json
 import CredentialManager;
 
 from pprint import pprint
 
-sg = sendgrid.SendGridClient(CredentialManager.get_value("SendGridUsername"), CredentialManager.get_value("SendGridPassword"));
-message = sendgrid.Mail();
+#######################################################################
+# Written by Ryan D'souza
+# 
+# Sends a text to myself of a link
+# If the link is too long, uses po.st to shorten the link
+#
+# Dependency: CredentialManager.py
+#   See: tiny.cc/credentialManager.py
+#
+# Run:
+#   python TextLink.py
+#######################################################################
 
-message.add_to("Ryan D'souza <" + CredentialManager.get_value("PHONE") + "@vtext.com>");
+def compress_url(url):
+        JSON = json.loads(urllib.urlopen("http://po.st/api/shorten?longUrl=" + url + "&apiKey=3E5C05F5-DDED-4485-A193-F486E947F547",'r').read());
+        return JSON['short_url'];
 
-message.set_from("MBPro CL");
+url = "https://api.sendgrid.com/api/mail.send.json";
+to = CredentialManager.get_value("PHONE") + "@vtext.com";
+from_ = "MBProCL";
+username = CredentialManager.get_value("SendGridUsername");
+password = CredentialManager.get_value("SendGridPassword");
 
 #If a link has been included as a parameter
 if len(sys.argv) == 2:
@@ -24,40 +40,30 @@ if len(sys.argv) == 2:
 
     #Else, compress it
     else:
-        JSON = json.loads(urllib.urlopen("http://po.st/api/shorten?longUrl=" + sys.argv[1] + "&apiKey=3E5C05F5-DDED-4485-A193-F486E947F547",'r').read());
-        bodyText = JSON['short_url'];
+        bodyText = compress_url(sys.argv[1]);
 
 #Otherwise, just prompt for link
 else:
     bodyText = raw_input("Enter text content: ");
 
-#Blank subject
-message.set_subject(" ");
+    if len(bodyText) >= 150:
+        bodyText = compress_url(bodyText);
 
-#Text is what the user inputted
-message.set_text(bodyText);
+params = {
+    "api_user": username,
+    "api_key": password,
+    "from": from_,
+    "to": to,
+    "subject": " ",
+    "text": bodyText
+};
 
-#Send the message
-status, msg = sg.send(message);
+params = urllib.urlencode(params);
 
-#Print error
-if msg.find("success") == -1:
-    print msg;
+request = urllib.urlopen(url, params);
+response = request.read();
 
-#Print message successfully sent
+if response.find("success") == -1:
+    print(response);
 else:
-    print "Successfully sent"
-
-
-#Old message text that involved command line arguments
-'''
-#If there is only one parameter, the subject is blank
-if len(sys.argv) == 2:
-    message.set_subject(" ");
-    message.set_text(sys.argv[1]);
-
-#But, if there's also a subject
-if len(sys.argv) == 3:
-    message.set_subject(sys.argv[1]);
-    message.set_subject(sys.argv[2]);
-'''
+    print("Successfully sent");
