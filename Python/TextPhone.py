@@ -12,7 +12,7 @@ import urllib;
 #   tiny.cc/credentialManager
 #
 # Run Instructions: 
-#   python TextPhone
+#   python TextPhone.py
 ######################################################
 
 
