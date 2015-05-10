@@ -7,9 +7,11 @@
 Super lightweight, secure (base64encode), quick, and easy to use credential manager to save and retrieve passwords. Stores the encrypted passwords in a secret json file in a secret folder in the home directory, enabling the script to be run from anywhere on the computer.
 
 There's only one file needed (quick for copying/pasting), and all imports are from the standard python library so downloading it is as simple as 
+
     curl -L tiny.cc/credentialManager.py > CredentialManager.py
 
 and using it as simple as
+
     python CredentialManager.py
 
 I mainly built this to use on my school's computer where installing commandline tools like 'pip' is not allowed. Because of that, I can't install python's 'keyring' library to securely store my usernames/passwords. So, I made this script which can be run from anywhere
@@ -71,7 +73,7 @@ Run Instructions:
 
 ####[Text Link](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextLink.py)
 Quickly sends a link to myself from the commandline
-If the link is too long (over 150 characters), shortens the link by using po.st
+If the link is too long (over 150 characters), shortens the link by using [po.st](https://www.po.st)
 
 Dependencies:
     [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
