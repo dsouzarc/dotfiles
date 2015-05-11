@@ -44,7 +44,7 @@ Quickly modifying data (Option 2) --> Run from the terminal
     python -c 'import CredentialManager; CredentialManager.delete_key("gmailUsername")'
 
 
-#####[Note Taker](https://github.com/dsouzarc/dotfiles/tree/master/Python/NoteTaker)
+####[Note Taker](https://github.com/dsouzarc/dotfiles/tree/master/Python/NoteTaker)
 Takes random notes on a book.
 For more details, see [README.md](https://github.com/dsouzarc/dotfiles/tree/master/Python/NoteTaker)
 
