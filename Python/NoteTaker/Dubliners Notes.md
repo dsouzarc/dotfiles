@@ -1,0 +1,129 @@
+####Ryan D'souza
+#####AP English IV
+#####Dubliner Notes
+
+- **Page 4**: Old Cotter was sitting at the fire, smoking, when I came downstairs to supper.
+- **Page 6**:  It began to confess to me in a murmuring voice and I wondered why it smiled continually and why the lips were so moist with spittle.
+- **Page 8**: I wished to go in and look at him, but I had not the courage to knock.
+- **Page 10**:  There he lay, solemn and copious, vested as for the altar, his large hands loosely retaining a chalice.
+- **Page 12**:  It was him brought us all them flowers and them two candlesticks out of the chapel, and wrote out the notice for the Freeman's General and took charge of all the papers for the cemetery and poor James's insurance.
+- **Page 14**:  I too listened; but there was nosound in the house: and I knew that the old priest was lying still in his coffin as we had seen him, solemn and truculent in death, an idle chalice on his breast.
+- **Page 16**:  "Hardly had the day".
+- **Page 18**:  `That's forfeit,' said Mahony.
+- **Page 20**:  Refreshed by this, Mahony chased a cat down a lane, but the cat escaped into a wide field.
+- **Page 22**:  His attitude on this point struck me as strangely liberal in a man of hisage.
+- **Page 24**:  When I reached the top of the slope I turned round and, without looking at him, called loudly across the field: 'Murphy!' My voice had an accent of forced bravery in it, and I was ashamed of my paltry stratagem.
+- **Page 26**:  I had never spoken to her, except for a few casual words, and yet her name was like a summons to all my foolish blood.
+- **Page 28**:  'If I go,' I said, 'I will bring you something.'
+- **Page 30**:  The sight of the streets thronged with buyers and glaring with gas recalled to me the purpose of my journey.
+- **Page 32**:  Then I turned away slowly and walked down the middle of the bazaar.
+- **Page 34**:  Even now, though she was over nineteen, she sometimes felt herself in danger of her father's violence.
+- **Page 36**:  First of all it had been an excitement for her to have a fellow and then she had begun to like him.
+- **Page 38**:  He was shouted at to go on, but he still called to her.
+- **Page 40**:  Such a person (as his father agreed) was well worth knowing, even if he had not been the charming companion he was.
+- **Page 42**:  The young men supped in a snug room lit by electric candle lamps.
+- **Page 44**: A torrent of talk followed.
+- **Page 46**:  The cabin door opened and he saw the Hungarian standing in a shaft of grey light:`Daybreak, gentlemen!'.
+- **Page 48**:  He was insensitive to all kinds of discourtesy.
+- **Page 50**:  I used to take them out, man, on the tram.
+- **Page 52**:  He did not wish to ruffle his friend's temper, to be sent to the devil and told that his advice was not wanted.
+- **Page 54**:  As he approached Hume Street corner he found the air heavily scented, and his eyes made a swift anxious scrutiny of the young woman's appearance.
+- **Page 56**:  Though his eyes took note of many elements of the crowd through which he passed, they did so morosely.
+- **Page 58**:  He wondered if he had asked her yet or if he would leave it to the last.
+- **Page 60**:  'Did it come off?' They had reached the corner of Ely Place.
+- **Page 62**:  He was also handy with the mits and sang comic songs.
+- **Page 64**:  Some mothers would be content to patch up such an affair for a sum of money: she had known cases of it.
+- **Page 66**:  She was a little vulgar; sometimes she said 'I seen' and 'If I had've known.
+- **Page 68**:  It would be all right, never fear.
+- **Page 70**:  His hands were white and small, his frame was fragile, his voice was quiet and his manners were refined.
+- **Page 72**: He turned to the right towards Capel Street.
+- **Page 74**:  Soda? Lithia? No mineral? I'm the same.
+- **Page 76**:  'Other things, too,' said Little Chandler shortly.
+- **Page 78**: 'I'll tell you my opinion,' said Ignatius Gallaher, emerging after sometime from the clouds of smoke in which he had taken refuge, `it's a rum world.
+- **Page 80**:  'O, in that case.
+- **Page 82**: The barman brought their drinks.
+- **Page 84**:  Little Chandler looked at it, pausing at the thin tight lips.
+- **Page 86**:  It began to sob piteously, losing its breath for four or five seconds, and then bursting out anew.
+- **Page 88**:  Mr Alleyne did not lose a moment:.
+- **Page 90**: 'It's all right, Mr Shelly,' said the man, pointing with his finger to indicate the objective of his journey.
+- **Page 92**:  The chief clerk began to hurry Miss Parker, saying she would never have the letters typed in time for post.
+- **Page 94**:  All the clerks passed out and finally the cashier came out with the chief clerk.
+- **Page 96**:  O'Halloran had money, but neither of the other two seemed to have any; so the whole party left the shop somewhat regretfully.
+- **Page 98**:  He was so angry that he lost count of the conversation of his friends.
+- **Page 100**: 'What the hell do you know about it?' said Farrington fiercely, turning on the man.
+- **Page 102**: 'She was always sent for when the women quarrelled over their tubs and always succeeded in making peace.
+- **Page 104**: But wasn't Maria glad when the women had finished their tea and thecook and the dummy had begun to clear away the tea-things! She went into her little bedroom and, remembering that the next morning was a mass morning, changed the hand of the alarm from seven to six.
+- **Page 106**:  Everybody had a solution for the mystery and Mrs Donnelly said it was plain that Maria had left it behind her in the tram.
+- **Page 108**:  There was a pause for a few seconds; and then a great deal of scuffling and whispering.
+- **Page 110**:  On lifting the lid of the desk a faint fragrance escaped - the fragrance of new cedar-wood pencils or a bottle of gum or of an over-ripe apple which might have been left there and forgotten.
+- **Page 112**:  She alluded once or twice to her husband, but her tone was not such as to make the allusion a warning.
+- **Page 114**:  Sometimes he caught himself listening to the sound of his own voice.
+- **Page 116**: Four years passed. Mr Duffy returned to his even way of life. His room still bore witness of the orderliness of his mind.
+- **Page 118**:  The river lay quiet beside the empty distillery and from time to time a light appeared in some house on the Lucan road.
+- **Page 120**:  The night was cold and gloomy.
+- **Page 122**:  He selected one of the cards and read what was printed on it:.
+- **Page 124**:  Only I'm an old man now I'd change his tune for him. I'd take the stick to his back and beat him while I could stand over him - as I done many a time before. 
+- **Page 126**:  One man is a plain honest man with no hunker-sliding about him.
+- **Page 128**: "But I think he'll be all right."
+- **Page 130**:  Just go round and try and find out how they're getting on.
+- **Page 132**: 'O, don't trouble, I beg!' 'No, but the stairs is so dark.
+- **Page 134**: 'I think I know the little game they're at,' said Mr Henchy.
+- **Page 136**: 'The boy came back with the corkscrew.
+- **Page 138**:  'Did the cowcalve?' 'O, of course, Lyons spots the drink first thing!' said Mr O'Connor, laughing.
+- **Page 140**:  He just says to himself: "The old one never went to see these wild Irish.
+- **Page 142**:  After a rather long pause he announced: 'THE DEATH OF PARNELL, 6th October, 1891.' He cleared his throat once or twice and then began to recite: 'He is dead.'
+- **Page 144**: No sound of strife disturb his sleep! Calmly he rests: no human pain Or high ambition spurs him nowThe peaks of glory to attain.
+- **Page 146**:  As she was naturally pale and unbending in manner she made few friends at school.
+- **Page 148**:  She forgot nothing, and, thanks to her, everything that was to be done was done.
+- **Page 150**:  Mr Fitzpatrick seemed to enjoy himself; he was quite unconscious that Mrs Kearney was taking angry note of his conduct.
+- **Page 152**:  Then she gave a little sigh and said: 'Ah, well! We did our best, the dear knows.'
+- **Page 154**: Mrs Kearney brought her daughter over to them, and talked to themamiably.
+- **Page 156**:  From the hall came sounds of encouragement, clapping and stamping of feet.
+- **Page 158**: All this time the dressing-room was a hive of excitement.
+- **Page 160**:  Mrs Kearney had to stand aside to allow the baritone and his accompanist to pass up to the platform.
+- **Page 162**:  A darkmedal of blood had formed itself near the man's head on the tessel- lated floor.
+- **Page 164**:  While the point wasbeing debated a tall agile gentleman of fair complexion, wearing a long yellow ulster, came from the far end of the bar.
+- **Page 166**:  He struck a match and, sheltering it in the shell of his hands, peered again into the mouth which Mr Kernan opened obediently.
+- **Page 168**:  The arc of his social rise inter- sected the arc of his friend's decline, but Mr Kernan's decline was mitigated by the fact that certain of those friends who had known him at his highest point of success still esteemed him as a character.
+- **Page 170**:  He was a thoroughly sensible man, influential and intelligent.
+- **Page 172**: 'I'm very much obliged to you, old man,' said the invalid.
+- **Page 174**:  I remember now there was a policeman.
+- **Page 176**:  'It's like everything else in this world,' he said.
+- **Page 178**:  Then Mr Power said, point-blank: `To tell you the truth, Tom, we're going to make a retreat.
+- **Page 180**:  'The Jesuits are a fine body of men,' said Mr Power.
+- **Page 182**: We went into Butler's in Moore Street faith, I was genuinely moved, tell you the God's truth - and I remember well his very words.
+- **Page 184**:  [Mr. Fogarty] had failed in business in a licensed house in the city because his financial condition had constrained him to tie himself to second-class distillers and brew- ers. 
+- **Page 186**:  O, I know about the infallibility of the Pope.
+- **Page 188**: 'None of the Grays was any good,' said Mr Power.
+- **Page 190**:  The light of the lamps of the church fell upon an assembly of black clothes and white collars, relieved here and there by tweeds, on dark mottled pillars of green marble and on lugubrious canvases.
+- **Page 192**:  It was a text for business men and professional men.
+- **Page 194**:  That was a good thirty years ago if it was a day.
+- **Page 196**: 'Tell me, Lily,' he said in a friendly tone, 'do you still go to school?' 'O no, sir,' she answered.
+- **Page 198**:  Aunt Kate was more vivacious.
+- **Page 200**: `Goloshes!' said Mrs Conroy.
+- **Page 202**: '`I'm the man for the ladies,' said Mr Browne, pursing his lips until hismoustache bristled, and smiling in all his wrinkles.
+- **Page 204**:  They had hardly gone when Aunt Julia wandered slowly into the room, looking behind her at something.
+- **Page 206**:  A picture of the balcony scene in Romeo and Juliet hung there and be- side it was a picture of the two murdered princes in the Tower which Aunt Julia had worked in red, blue, and brown wools when she was a girl.
+- **Page 208**:  He loved to feel the covers and turn over the pages of newly printed books.
+- **Page 210**: 'And haven't you your own land to visit,' continued Miss Ivors, 'that you know nothing of, your own people, and your own country?' 'O, to tell you the truth,' retorted Gabriel suddenly, `I'm sick of my own country, sick of it!'
+- **Page 212**:  He's full of conceit, I think.
+- **Page 214**: ' Very good: that was one for Miss Ivors.
+- **Page 216**: Aunt Kate turned fiercely on her niece and said: 'I know all about the honour of God, Mary Jane, but I think it's not at all honourable for the Pope to turn out the women out of the choirs that have slaved there all their lives and put little whipper-snappers of boys over their heads.
+- **Page 218**: 'A fat brown goose lay at one end of the table, and at the other end, on abed of creased paper strewn with sprigs of parsley, lay a great ham,.
+- **Page 220**: 'A chorus of voices invited him to begin his own supper, and Lily cameforward with three potatoes which she had reserved for him.
+- **Page 222**:  But I suppose none of you ever heard of him.
+- **Page 224**: 'I wish we had an institution like that in our Church,' said Mr Brownecandidly.
+- **Page 226**:  Everyone laughed or smiled at Aunt Kate and Aunt Julia and Mary Jane, who all turned crimson with pleasure.
+- **Page 228**:  He raised his glass of port gallantly, while every member of the company fingered a glass expectantly, and said loudly:.
+- **Page 230**:  He pointed down the snow-covered quay from where the sound of shrill prolonged whistling was borne in.
+- **Page 232**: '`The Lord have mercy on his soul,' said Aunt Kate, compassionately.
+- **Page 234**:  She was leaning on the banisters, listening to something.
+- **Page 236**: Mary Jane brushed past the others and ran to the staircase, but beforeshe reached it the singing stopped and the piano was closed abruptly.
+- **Page 238**: Everyone gave him advice and said it was a great pity and urged him to be very careful of his throat in the night air.
+- **Page 240**:  The others spoke only a few words, pointing out some building or street.
+- **Page 242**:  Then he mumbled good night and went out.
+- **Page 244**:  Now that she had fallen to him so easily, he wondered why he had been so diffident.
+- **Page 246**: She looked at him and asked in surprise: `What for?' Her eyes made Gabriel feel awkward.
+- **Page 248**:  He was in decline, they said, or something like that.
+- **Page 250**:  He did not like to say even to himself that her face was no longer beautiful, but he knew that it was no longer the face for which Michael Furey had braved death.
+-  **Page 252**: His soul swooned slowly as he heard the snow falling faintly through the universe and faintly falling, like the descent of their last end, upon all the living and the dead.
