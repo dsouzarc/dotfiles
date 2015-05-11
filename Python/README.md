@@ -44,6 +44,11 @@ Quickly modifying data (Option 2) --> Run from the terminal
     python -c 'import CredentialManager; CredentialManager.delete_key("gmailUsername")'
 
 
+#####[Note Taker](https://github.com/dsouzarc/dotfiles/tree/master/Python/NoteTaker)
+Takes random notes on a book.
+For more details, see [README.md](https://github.com/dsouzarc/dotfiles/tree/master/Python/NoteTaker)
+
+
 ####[iOS App Icon Resizer](https://github.com/dsouzarc/dotfiles/blob/master/Python/iOSAppIconResizer.py)
 Quickly resizes an image of any extension to 5 png images according to Apple's iOS icon requirements. 
 Creates a directory in the directory it is run from called 'AppIcon' and saves each file there with the appropriate title ie. iPhone6@3x.png will be 180 x 180
