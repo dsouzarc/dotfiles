@@ -20,7 +20,7 @@ Each time you run the above line, a different set of notes is generated, so if y
 The notes will be created and stored as both a .docx and a .markdown file for your convenience.
 
 In both file cases, the format for a note is:
-- **Page X: ** Some note or quotation.
+- **Page X:** Some note or quotation.
 
 I strongly recommend reading through the resulting files to fix grammatical errors, strange formatting, and misplaced titles. 
 
