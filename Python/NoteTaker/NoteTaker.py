@@ -1,6 +1,8 @@
 import pyPdf;
 import random;
 
+from docx import Document;
+
 ####################################################################
 # Written by Ryan D'souza
 # Generates notes randomly from a PDF
@@ -10,6 +12,7 @@ import random;
 #UPDATE THESE
 fileName = "Dubliners.pdf";
 noteSheetName = "Dubliners Notes.md";
+noteSheetWordName = "Dubliners Notes.docx";
 startPage = 4; #The actual first page of the book
 
 #Optional Update
@@ -36,6 +39,7 @@ pdf = pyPdf.PdfFileReader(book);
 
 #Create a notes file
 notes = open(noteSheetName, "w");
+wordDocument = Document();
 
 for i in range(startPage, pdf.getNumPages()):
 
@@ -48,17 +52,28 @@ for i in range(startPage, pdf.getNumPages()):
         text = text.replace("\n", " ");
         lines = text.split(".");
 
-        #A formatted, random line
-        randomNoteLine = randomNote(lines);
-        formattedLine = formatLine(i, randomNoteLine);
+        #While loop for continually retrying 'try' until there is no exception
+        while True:
 
-        #Sometimes there's an encoding error when writing to file, so just choose another line
-        try: 
-            notes.write(formattedLine);
-        except (UnicodeEncodeError):
-            formattedLine = formatLine(i, rrandomNote(lines));
-            notes.write(formattedLine);
+            #Try writing to both files (possible encoding error)
+            try: 
+
+                #Get a formatted line at random from the page
+                randomNoteLine = randomNote(lines);
+                formattedLine = formatLine(i, randomNoteLine);
+
+                #Add the line to the word document note sheet and the markdown note sheet
+                noteLine = wordDocument.add_paragraph('', style='ListBullet');
+                notes.write(formattedLine);
+                noteLine.add_run('Page ' + str(i) + ': ').bold = True
+                noteLine.add_run(randomNoteLine).bold = False;
+
+            #Sometimes there is an encoding error. Choose a new line and repeat
+            except (UnicodeEncodeError):
+                continue;
+            break;
 
 #Save and print mission success :)
 notes.close();
-print("Notes created. Check: " + noteSheetName);
+wordDocument.save(noteSheetWordName);
+print("Notes created. Check: " + noteSheetName + " and " + noteSheetWordName);
