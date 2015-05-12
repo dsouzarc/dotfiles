@@ -63,8 +63,8 @@ for i in range(startPage, pdf.getNumPages()):
                 formattedLine = formatLine(i, randomNoteLine);
 
                 #Add the line to the word document note sheet and the markdown note sheet
-                noteLine = wordDocument.add_paragraph('', style='ListBullet');
                 notes.write(formattedLine);
+                noteLine = wordDocument.add_paragraph('', style='ListBullet');
                 noteLine.add_run('Page ' + str(i) + ': ').bold = True
                 noteLine.add_run(randomNoteLine).bold = False;
 
