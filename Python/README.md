@@ -38,12 +38,13 @@ Quickly modifying data (Option 1) --> [Example](https://github.com/dsouzarc/dotf
 
     CredentialManager.delete_key("PromMeParseAPIKey");
 
-Quickly modifying data (Option 2) --> Run from the terminal
-
+Quickly modifying data (Option 2) --> Run from the terminal. Each term (ie. 'save_key') is a string param and causes the program to prompt for additional input
     python CredentialManager save_key
     python CredentialManager get_value
     python CredentialManager does_key_exist
     python CredentialManager delete_key
+
+Quickly modifying data (Option 3) --> Run from the terminal
 
     python -c 'import CredentialManager; CredentialManager.save_key("myKey", "myValue")'
     python -c 'import CredentialManager; CredentialManager.delete_key("gmailUsername")'
