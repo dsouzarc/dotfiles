@@ -46,7 +46,7 @@ alias myip="myIP"
 
 #Prints local IP Address
 alias myIPL="ipconfig getifaddr en1"
-alias myipl="myIPl"
+alias myipl="myIPL"
 
 #Go places
 alias toprogramming="cd $dboxprogram"
