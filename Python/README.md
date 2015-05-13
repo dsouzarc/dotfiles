@@ -40,6 +40,11 @@ Quickly modifying data (Option 1) --> [Example](https://github.com/dsouzarc/dotf
 
 Quickly modifying data (Option 2) --> Run from the terminal
 
+    python CredentialManager save_key
+    python CredentialManager get_value
+    python CredentialManager does_key_exist
+    python CredentialManager delete_key
+
     python -c 'import CredentialManager; CredentialManager.save_key("myKey", "myValue")'
     python -c 'import CredentialManager; CredentialManager.delete_key("gmailUsername")'
 
