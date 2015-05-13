@@ -1,7 +1,10 @@
+#!/usr/bin/python
+
 import base64;
 import json;
 import getpass; 
 import os;
+import sys;
 
 
 ######################################################################################
@@ -93,9 +96,15 @@ def get_value(key):
 def get(key):
     return get_value(key);
 
+def get_value_prompt():
+    return get_value(raw_input("Enter key: "));
+
 #Check to see if a value/credential exists
 def does_key_exist(key):
     return key in credentials;
+
+def does_key_exist_prompt():
+    return does_key_exist(raw_input("Enter key: "));
 
 #Delete a credential
 def delete_key(key):
@@ -111,6 +120,9 @@ def delete_key(key):
     else:
         print("Delete failed; '" + key + "' does not exist");
 
+def delete_key_prompt():
+    delete_key(raw_input("Enter key to delete: "));
+
 #Prompts for credentials, then saves them
 def save_credentials_prompt():
     usernameKey = raw_input("Username key: ")   
@@ -122,4 +134,15 @@ def save_credentials_prompt():
 
 #Only prompt for credentials and then save them if this file is run from main ( 'python CredentialManager.py' )
 if __name__ == "__main__":
-    save_credentials_prompt();
+
+    if len(sys.argv) == 1:
+        save_credentials_prompt();
+    elif len(sys.argv) == 2:
+        if sys.argv[1] == "save_key":
+            save_key_prompt();
+        elif sys.argv[1] == "get_value":
+            print(get_value_prompt());
+        elif sys.argv[1] == "does_key_exist":
+            print(does_key_exist_prompt());
+        elif sys.argv[1] == "delete_key":
+            delete_key_prompt();
