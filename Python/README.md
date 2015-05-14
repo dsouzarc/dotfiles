@@ -41,6 +41,7 @@ Quickly modifying data (Option 1) --> [Example](https://github.com/dsouzarc/dotf
 Quickly modifying data (Option 2) --> Run from the terminal. Each term (ie. 'save_key') is a string param and causes the program to prompt for additional input
 
     python CredentialManager save_key
+    python CredentialManager set_value
     python CredentialManager get_value
     python CredentialManager does_key_exist
     python CredentialManager delete_key

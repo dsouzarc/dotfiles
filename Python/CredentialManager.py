@@ -140,6 +140,8 @@ if __name__ == "__main__":
     elif len(sys.argv) == 2:
         if sys.argv[1] == "save_key":
             save_key_prompt();
+        elif sys.argv[1] == "set_value":
+            save_key_prompt();
         elif sys.argv[1] == "get_value":
             print(get_value_prompt());
         elif sys.argv[1] == "does_key_exist":
