@@ -44,6 +44,9 @@ alias EmailMe="python $dotfiles/Python/EmailMe.py"
 #Runs a bash script to shorten a link, print the shortened URL, and copy it to clipboard
 alias ShortenLink="$dotfiles/Bash/./ShortenURL.sh"
 
+#Prints the definition of a word and its usage in a sentence
+alias define="python $dotfiles/Python/Dictionary.py"
+
 #Prints current external IP Address
 alias myIP="curl http://api.ipify.org; echo" #Other option: 'curl ifconfig.me'
 alias myip="myIP"
