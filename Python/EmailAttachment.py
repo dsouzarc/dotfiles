@@ -1,6 +1,6 @@
 #!/usr/bin/python
-import base64;
 import CredentialManager;
+import os;
 import sys;
 import urllib2;
 import urllib;
@@ -8,12 +8,13 @@ import urllib;
 ######################################################
 # Written by Ryan D'souza
 # Sends an attachment to myself using SendGrid's API
+# Can be run from any directory
 #
 # Dependencies: CredentialManager
 #   tiny.cc/credentialManager
 #
 # Run Instructions: 
-#   python EmailAttachment.py
+#   python EmailAttachment.py fileName
 ######################################################
 
 
@@ -42,8 +43,11 @@ params = {
     "text": fileName,
 };
 
+#Current working directory + file name
+filePath = str(os.getcwd()) + "/" + fileName;
+
 #Add the file to the params
-with open(fileName, 'rb') as f:
+with open(filePath, 'rb') as f:
     params['files[' + fileName + ']'] = f.read();
 
 #Encode them

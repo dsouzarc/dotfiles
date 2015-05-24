@@ -110,10 +110,9 @@ Run Instructions:
     python TextPeople.py
 
 ####[Email Attachment](https://github.com/dsouzarc/dotfiles/blob/master/Python/EmailAttachment.py)
-Wrote this Python script to quickly email attachments to myself because it takes way too long to do something that simple on my mid-2009 Macbook Pro. Gmail, when accessed via a web browser, uses way too much of the CPU and lags for the first 20 seconds because of all the JavaScript it has to load. The Mail app uses way too much RAM to always be open, and when I do need to open it to quickly send myself something, the app opening/loading takes about 20 seconds. Those timings only include
-opening the app; going to 'Create new message', setting the 'To' to myself, clicking 'Attach File' and navigating to the file, uploading and then sending the file brings the total time to email myself a small attachment 2ish minutes.
+I wrote this Python script to quickly email files to myself because it takes way too long to do something that simple on my mid-2009 Macbook Pro. Gmail, when accessed via a web browser, uses way too much CPU processing power and lags for the first 20 seconds because of all the JavaScript it has to load. The Mail app uses way too much RAM to always be open, and when I do need to open it to quickly send myself something, the app opening/loading takes about 20 seconds. Those timings only include opening the app; going to 'Create new message', setting the 'To' to myself, clicking 'Attach File' and navigating to the file, uploading and then sending the file brings the total time to email myself a small attachment to about two minutes.
 
-This Python script sends an attachment to myself in about 2 seconds and uses almost no additional RAM and CPU processing.
+This Python script sends an attachment to myself in about 2 seconds and uses almost no additional RAM or CPU processing powerr. The script can be run from any directory and gets the file name (optional command line parameter) from the current working directory
 
 Dependencies:
      [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
