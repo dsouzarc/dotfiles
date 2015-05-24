@@ -24,6 +24,10 @@ alias countall="find */ -type f | wc -l"
 #Runs a python script that converts an image to all the necessary sizes for an iOS app
 alias iOSImageConverter="python $dotfiles/Python/iOSAppIconResizer.py"
 
+#Runs a python script to email a file to myself as an attachment
+alias EmailAttachment="python $dotfiles/Python/EmailAttachment.py"
+alias EmailAttch="EmailAttachment"
+
 #Runs a python script to send a text to my phone
 alias TextPhone="python $dotfiles/Python/Textphone.py"
 
