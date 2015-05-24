@@ -56,6 +56,21 @@ Quickly modifying data (Option 3) --> Run from the terminal
 Takes random notes on a book.
 For more details, see [README.md](https://github.com/dsouzarc/dotfiles/tree/master/Python/NoteTaker)
 
+####[Dictionary](https://github.com/dsouzarc/dotfiles/blob/master/Python/Dictionary.py)
+I wrote this script because using a web browser to look up the definition of a word takes way too long on my computer (mid-2009 Macbook Pro)
+
+This script prints out the definition of a word and usage of the word in a sentence
+
+Dependencies: None
+
+Usage:
+
+    python Dictionary.py perfunctory
+
+Or, to prompt:
+
+    python Dictionary.py
+
 
 ####[iOS App Icon Resizer](https://github.com/dsouzarc/dotfiles/blob/master/Python/iOSAppIconResizer.py)
 Quickly resizes an image of any extension to 5 png images according to Apple's iOS icon requirements. 
@@ -66,7 +81,7 @@ Creates a directory in the directory it is run from called 'AppIcon' and saves e
 
 
 ####[Text Phone](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextPhone.py)
-Quickly sends a text to myself from the commandline
+Quickly sends a text to myself from the command line
 
 Dependencies:
     [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
@@ -81,8 +96,7 @@ Or, as a prompt:
 
 
 ####[Text Phone Plain](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextPhoneP.py)
-Quickly sends a text to myself from the commandline
-Different from 'Text Phone' in that it has no dependencies, which means the password needs to be entered while the program is run
+Also quickly sends a text to myself from the command line. The main difference between this and 'TextPhone.py' is that it has no dependencies (it prompts for password via a secure input formatter)
 
 Run Instructions (prompts for info):  
 
