@@ -69,7 +69,6 @@ Creates a directory in the directory it is run from called 'AppIcon' and saves e
 Quickly sends a text to myself from the commandline
 
 Dependencies:
-
     [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
 
 Run Instructions:
@@ -89,12 +88,12 @@ Run Instructions (prompts for info):
 
     python TextPhoneP.py
 
+
 ####[Text Link](https://github.com/dsouzarc/dotfiles/blob/master/Python/TextLink.py)
 Quickly sends a link to myself from the commandline
 If the link is too long (over 150 characters), shortens the link by using [po.st](https://www.po.st)
 
 Dependencies:
-
     [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
 
 Run Instructions:
@@ -109,7 +108,6 @@ Or, as a prompt:
 Quickly sends a text to anyone from anyone from the commandline
 
 Dependencies:
-
      [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
 
 Run Instructions (prompts for info):
@@ -122,7 +120,6 @@ I wrote this Python script to quickly email files to myself because it takes way
 This Python script sends an attachment to myself in about 2 seconds and uses almost no additional RAM or CPU processing power. The script can be run from any directory and gets the file name (optional command line parameter) from the current working directory
 
 Dependencies:
-
      [CredentialManager.py](https://github.com/dsouzarc/dotfiles/tree/master/Python#credential-manager)
 
 Run Instructions:
