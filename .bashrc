@@ -73,6 +73,12 @@ downloadsite() {
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
 
+#Lists only the directories in a directory
+alias lsd="ls -d */"
+
+#Lists only the directories in a directory but in fancy formatting
+alias lsdf="ls -d */ | cut -f1 -d'/'"
+
 #Shortens git commiting everything
 commitall() {
     git add --all
