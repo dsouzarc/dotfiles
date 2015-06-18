@@ -1,3 +1,8 @@
+##################################
+# Written by Ryan D'souza
+# A collection of my aliases 
+##################################
+
 export PATH=/path/to/dir:$PATH
 
 #Copy current directory to clipboard
@@ -18,6 +23,9 @@ dboxprogram="~/Dropbox/All\ Good\ Programming\ Books"
 #DOTFILES SHORTCUTS
 dotfiles="$dboxprogram/dotfiles"
 
+#Renames all pngs in a directory with a file name that includes 'Screenshot' with the format Screenshot_X.png
+alias renamescreenshot="$dotfiles/Bash/./ScreenshotRename.sh"
+
 #Counts number of files in directories and subdirectories
 alias countall="find */ -type f | wc -l"
 
@@ -27,6 +35,9 @@ alias iOSImageConverter="python $dotfiles/Python/iOSAppIconResizer.py"
 #Runs a python script to email a file to myself as an attachment
 alias EmailAttachment="python $dotfiles/Python/EmailAttachment.py"
 alias EmailAttch="EmailAttachment"
+
+#Runs a python script to securely save my credentials
+alias CredentialManager="python $dotfiles/Python/CredentialManager.py"
 
 #Runs a python script to send a text to my phone
 alias TextPhone="python $dotfiles/Python/Textphone.py"
@@ -72,12 +83,6 @@ downloadsite() {
 
 #Normal ls but displays '/' for directories 
 alias ls="ls -CF"
-
-#Lists only the directories in a directory
-alias lsd="ls -d */"
-
-#Lists only the directories in a directory but in fancy formatting
-alias lsdf="ls -d */ | cut -f1 -d'/'"
 
 #Shortens git commiting everything
 commitall() {
@@ -168,4 +173,4 @@ then
 fi
 
 #Causes the changes to .bashrc to come true
-alias bashme="cp ~/.bashrc ~/.bash_profile; source ~/.bashrc"
+alias bashme="cp ~/.bashrc ~/.bash_profile && source ~/.bashrc && echo Successfully bashed"
