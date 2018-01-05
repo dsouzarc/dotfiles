@@ -1,8 +1,10 @@
 #!/usr/bin/python
-import CredentialManager;
-import sys;
-import urllib2;
-import urllib;
+
+import sys
+import urllib2
+import urllib
+
+from CredentialManager import CredentialManager
 
 ######################################################
 # Written by Ryan D'souza
@@ -18,18 +20,17 @@ import urllib;
 
 #If message is commandline argument
 if len(sys.argv) == 2:
-    message = sys.argv[1];
+    message = sys.argv[1]
 else:
-    message = raw_input("Enter message: ");
+    message = raw_input("Enter message: ")
 
 #Url for POST request
-url = "https://api.sendgrid.com/api/mail.send.json";
+url = "https://api.sendgrid.com/api/mail.send.json"
 
 #My Information
-username = CredentialManager.get_value("SendGridUsername");
-password = CredentialManager.get_value("SendGridPassword");
-from_ = "6099154930";
-to = from_ + "@vtext.com";
+username, password = CredentialManager().get_account('SendGrid')
+from_ = "6099154930"
+to = from_ + "@vtext.com"
 
 params = {
     "api_user": username,
@@ -38,14 +39,14 @@ params = {
     "to": to,
     "subject": " ",
     "text": message
-};
+}
 
-params = urllib.urlencode(params);
+params = urllib.urlencode(params)
 
-request = urllib.urlopen(url, params);
-response = request.read();
+request = urllib.urlopen(url, params)
+response = request.read()
 
 if response.find("success") == -1:
-    print(response);
+    print(response)
 else:
-    print("Successfully sent");
+    print("Successfully sent")
