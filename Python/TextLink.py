@@ -21,14 +21,20 @@ from CredentialManager import CredentialManager
 #   python TextLink.py
 #######################################################################
 
+
 def compress_url(url):
         JSON = json.loads(urllib.urlopen("http://po.st/api/shorten?longUrl=" + url + "&apiKey=3E5C05F5-DDED-4485-A193-F486E947F547",'r').read())
         return JSON['short_url']
 
+
 url = "https://api.sendgrid.com/api/mail.send.json"
-to = CredentialManager.get_value("PHONE") + "@vtext.com"
+
+credential_manager = CredentialManager()
+username, password = credential_manager.get_account('SendGrid')
+
+to = credential_manager.get_value("PHONE") + "@vtext.com"
 from_ = "MBProCL"
-username, password = CredentialManager().get_account('SendGrid')
+
 
 #If a link has been included as a parameter
 if len(sys.argv) == 2:
@@ -47,6 +53,7 @@ else:
 
     if len(bodyText) >= 150:
         bodyText = compress_url(bodyText)
+
 
 params = {
     "api_user": username,
