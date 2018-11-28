@@ -1,11 +1,11 @@
-#The Story
+# The Story
 
-###2014
+### 2014
 Throughout all of 2014, I had the Samsung Galaxy S4. I primarily used stock-apps with the exception of texting (QKSMS) and camera (switched to using Google Camera in May 2014)
 
 I would backup my photos to Google+ Photos, where they would remain hidden.
 
-###What went wrong - Multifold
+### What went wrong - Multifold
 
 + Many, many duplicates
     - If I took a photo on Snapchat and downloaded the snap, the photo would show up in two folders: 'All Photos' and 'Snapchat'
@@ -21,7 +21,7 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
     - In July, my write problems were severe - I could not even delete files from the SD card - and I broke the card in half and sent it to SanDisk to get a replacement 64GB SD card (under warranty)
     - I kept a few photos on that SD card, but nothing from that year's earlier trips to **London, Paris, Salzburg, Vienna, and Prague**.
 
-###Fast-forward a few months
+### Fast-forward a few months
 
 + I converted to iOS/iPhone 6 and absolutely loved it. When I made the switch, I was able to successfully transfer all the photos on my Android phone (both internal memory and SD card) to my new iPhone
     - Unfortunately, I still had a lot of duplicate photos (ie. screenshots and snapchat downloads that were saved twice)
@@ -29,7 +29,7 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
 
 + I eventually became frustrated with the duplicate, out-of-order photos and decided I would somehow transfer all the photos backed up to Google+ to my iPhone
 
-###The problem
+### The problem
 
 + When I downloaded my photos from Google+ as a 10.5GB .tgz file, I discovered that:
     - Not only were there the duplicate photos, but there were also other edited/enhanced copies Google+ stored but did not display on either the Google+ Photos website or Photos section of the Google+ app. 
@@ -39,13 +39,13 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
         + Photos from my Galaxy S4 were saved as DATE_TIME_NUMBER.jpg
         + Miscellaneous screenshots & downloaded photos were saved completely differently
 
-###The silver lining
+### The silver lining
 
 + Even though the photo date-added and date-edited timestamp was wrong, it was still in a folder named with the photo's correct date taken stamp (YEAR_DAY_MONTH)
     - One slight problem was that multiple back-ups on the same day caused multiple folders (ie. 'DATE', 'DATE #2', 'DATE #3')
 + The edited/enhanced photos Google+ added were uniform ie. ORIGINALFILENAME-EDITED.jpg
 
-###What I did
+### What I did
 
 + Decided to solve this problem programmatically
 
@@ -60,4 +60,4 @@ I would backup my photos to Google+ Photos, where they would remain hidden.
         - The date created/last modified timestamp of that photo would be: "Sunday, February 22nd 2015"
 
 
-#My solution worked and I was able to successfully transfer all the photos backed up on Google+ to my iPhone 6 :) 
+# My solution worked and I was able to successfully transfer all the photos backed up on Google+ to my iPhone 6 :) 
